@@ -1,5 +1,10 @@
 /* Used to format content on page */
  
+html, 
+body {
+    height: 100%;
+}
+
 img.logo {
     display: block;
     margin-left: auto;
@@ -42,4 +47,14 @@ video[poster]{
   height: 100%;
   object-fit: cover;
   z-index: -1000;
+}
+
+
+
+.content {
+  position: relative;
+  top: 50%;
+   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
