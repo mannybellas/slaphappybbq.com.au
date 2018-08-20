@@ -115,9 +115,14 @@
   crossorigin="anonymous"></script>
 
     <script>
-        $(function(){
-            $('.content').delay(3000).fadeIn(1000);
+
+        window.addEventListener('load', function(){
+            $(function(){
+                $('.content').delay(3000).fadeIn(1000);
+            });
         });
+
+        
     </script>        
 </body>
 </html>
