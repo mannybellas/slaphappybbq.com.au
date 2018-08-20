@@ -44,7 +44,7 @@
        <source id="bgvid" src="v/grilling_09_meat_01d.mp4" type="video/mp4">
     </video>
 </div>
-<div class="content">
+<div class="content hidden">
     <section id="header">
     	<img class="logo" src="i/SlapHappy-logo.png" alt="Crimson logo of SlapHappy BBQ">
     </section>
@@ -109,8 +109,16 @@
         </div>
     </section>
 </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-			  crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+            $('.content').delay(3000).fadeIn(1000);
+
+        });
+    </script>        
 </body>
 </html>
