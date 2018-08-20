@@ -1,0 +1,360 @@
+/* HTML Elements */
+
+html {
+    font-size: 100%;
+}
+ 
+body {
+    font-size: 1em;
+    font-family: 'Lora', serif;
+    color: #333333;
+    line-height: 1.4;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    font-weight: 500;
+    padding: 0;
+}
+
+/*
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0.67rem 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-style: italic;
+    text-align: center;
+}
+
+h4 {
+   font-size: 1rem;
+   margin: 0
+}
+
+h5 {
+    font-size: 0.83rem;
+    margin: 1.67rem 0;
+}
+
+h6 {
+    font-size: 0.75rem;
+    margin: 2.33rem 0;
+}
+
+th, td, p {
+    border: 0;
+}
+ 
+p {
+    margin: 0 2rem;
+    padding: 0;
+}
+ 
+a {
+    font-size: 1rem;
+}
+ 
+ul {
+}
+
+li {
+   color: #c1d045;
+   list-style: none;
+   display: block;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+ 
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+button {
+    float: right;
+}
+ 
+/* Radio Buttoms: https://codepen.io/mblode/pen/gGIAm */
+ 
+* {
+  box-sizing: border-box;
+}
+  
+.button-wrap {
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+ 
+.button-label {
+  display: inline-block;
+  width: 45%;
+  padding: 1em .8em;
+  margin: 0.5em;
+  cursor: pointer;
+  color: #292929;
+  border-radius: 0.25em;
+  background: #efefef;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+ 
+.button-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+ 
+.button-label:hover {
+  background: #d6d6d6;
+  color: #101010;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+}
+ 
+.button-label:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+}
+ 
+@media (max-width: 40em) {
+  .button-label {
+    padding: 1em;
+    margin: 0.25em;
+	height: 4em;
+	width: 100%;
+  }
+}
+
+#sweet-button:checked + .button-label {
+  background: #f1fa00;
+  color: #D90000;
+}
+/*#sweet-button:checked + .button-label:hover{
+  background: #f1fa00;
+  color: #8B5F5F;
+}*/
+
+#heat-button:checked + .button-label {
+  background: #e79800;
+  color: #000000;
+}
+
+/*#heat-button:checked + .button-label:hover {
+  background: #e79800;
+  color: #7A1912;
+}*/
+
+#fire-button:checked + .button-label {
+  background: #d90000;
+  color: #efefef;
+}
+/*#fire-button:checked + .button-label:hover {
+  background: #d90000;
+  color: #e2e2e2;
+}*/
+#try-button:checked + .button-label {
+  background: #4183d7;
+  color: #0E0808;
+}
+/*#try-button:checked + .button-label:hover {
+  background: #4183d7;
+  color: #e2e2e2;
+}*/
+
+.hidden {
+    display: none;
+    /*opacity:0; */
+}
+ 
+/* END: Radio Buttoms */
+ 
+/* Classes */
+ 
+.section {
+    padding: 1rem;
+	
+}
+#header {
+	background-color: rgb(184, 201, 157);
+}
+#tagline {
+	background-color:#d8ecc9;
+	border: 1px solid #fff;
+	text-align:center;
+	font-size: 2em;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);;
+	font-style:italic;
+	color: #4b4949;
+}
+
+#copy {
+	text-align:left;
+	color: #4b4949;
+}
+ 
+#form {
+	border-top: 1px solid #fff;
+	background-color:#cee7bb;
+	text-align:left;
+	color: #4b4949;
+}
+#form input[type="email"] {
+    padding: .4rem;
+    margin: .3rem 0;
+    box-sizing: border-box;
+	color: #777;
+	border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+#form input[type="email"]:focus {
+	background-color: #eee;
+}
+input[type="submit"] {
+    background-color: #d90000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 1em;
+    cursor: pointer;
+	border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+}
+
+ 
+div.form-area {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.content {
+    align-content: center;
+    width: 39%;
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  	-webkit-border-radius: 22px; 
+  	/* Firefox 1-3.6 */
+  	-moz-border-radius: 22px;  
+  	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  	border-radius: 22px;
+	margin: 0 auto !important;
+	background-color:#cee7bb;
+
+}
+
+.eachSocial {
+    margin: .6rem;
+    vertical-align: middle;
+} 
+ 
+/*If the browser window is 320px or larger*/
+@media only screen and (min-width: 320px) {
+
+    .content {
+        width: auto;
+    }
+     
+    /*.section {
+      padding: 0;
+    }*/
+     
+    #copy {
+	padding: 1rem;	
+	}
+    
+	#tagline {	
+		font-size: 1.3rem;		
+	}
+     
+	#form {
+		padding: .5rem 0 1rem;
+	}
+     
+    /*#form input[type="email"] {
+        max-width: 250px;
+    }*/
+    
+	#social {
+        margin: .25rem auto;
+        padding: .25rem 0;
+    }
+}
+ 
+/*If the browser window is 540px or larger*/
+@media only screen 
+  and (min-width: 480px) {
+      
+    .content {
+        max-width: 70%;
+    }
+     
+	#tagline {	
+		font-size: 2rem;		
+	}
+     
+    /*#form input[type="email"] {
+        max-width: 100%;
+    }*/
+    
+}
+ 
+/*If the browser window is 767px or larger*/
+@media only screen 
+  and (min-width: 767px) {
+      
+    .content {
+        max-width: 60%;
+    }
+    
+	#tagline {	
+		font-size: 2.5rem;		
+	}
+     
+}
+ 
+/*If the browser window is 1024px or larger*/
+@media only screen 
+  and (min-width: 1024px) {
+      
+    .content {
+        max-width: 50%;
+    }
+     
+	#tagline {	
+		font-size: 3rem;		
+	}
+     
+}
+ 
+/*If the browser window is 1260px or larger*/
+@media only screen 
+  and (min-width: 1260px) {
+      
+    .content {
+        max-width: 50%;
+    }
+}
