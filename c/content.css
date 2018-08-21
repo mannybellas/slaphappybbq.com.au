@@ -21,7 +21,7 @@ form {
     width: 90%;
 }
  
-video#bgvid {
+video .bgvid {
   position: fixed;
   top: 50%;
   left: 50%;
